@@ -52,7 +52,8 @@ function reiniciarJuego() {
 	let sectionReiniciar = document.getElementById('reiniciar');
 	sectionReiniciar.style.display = 'none';
 
-
+	let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota');
+	sectionSeleccionarMascota.style.display = 'flex';
 
 	let selecionarAtaque = document.getElementById('seleccionar-ataque');
 	selecionarAtaque.style.display = 'none';
@@ -172,15 +173,16 @@ function seleccionarMascotaEnemigo() {
   } 
  
 
+  	
 
   let selecionarAtaque = document.getElementById('seleccionar-ataque');
-	selecionarAtaque.style.display = 'block';
+	selecionarAtaque.style.display = 'flex';
 
   let sectionReiniciar = document.getElementById('reiniciar');
 	sectionReiniciar.style.display = 'block';
-
-
-
+	
+  let sectionSeleccionarMascota = document.getElementById('seleccionar-mascota');
+  sectionSeleccionarMascota.style.display = 'none';
 
 
 	cambiarEstadoBotones();	
