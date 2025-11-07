@@ -25,8 +25,9 @@ font-family: "Fredoka", sans-serif;
 }
 
 
-.tarjetas {
+.tarjetas, .contenedor-ataques {
     display: flex;
+    gap: 10px;
 }
 
 .tarjeta-de-mokepon {
@@ -60,21 +61,65 @@ font-family: "Fredoka", sans-serif;
      margin: 20px 0px;
 }
 
+
 .contenedor-ataques button {
     background-color: #11468f;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     border-color: transparent;
-    width: 100px;
+    width: 180px;
     color: white;
     font-family: "Poppins", sans-serif;
 }
 
+#mensajes {
+    width: 280px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 
 input {
     display: none;
 }
 
+input:checked + .tarjeta-de-mokepon {
+    border: 2px solid #00ff00;
+}
 
+#boton-reiniciar {
+    border: none;
+    color: #11468f;
+    font-family: "Poppins", sans-serif;    
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .contenedor-ataques {
+        flex-direction: column;
+    }
+}
+    
